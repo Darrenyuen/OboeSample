@@ -8,7 +8,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     static {
-        System.loadLibrary("Hello");
+        System.loadLibrary("Oboe");
     }
 
     private TextView mHelloTV;
@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mHelloTV = findViewById(R.id.hello_tv);
-        mHelloTV.setText(getHelloText());
+//        mHelloTV.setText(getHelloText());
     }
 
-    private native String getHelloText();
+//    private native String getHelloText();
 }

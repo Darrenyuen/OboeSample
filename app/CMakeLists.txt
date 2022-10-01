@@ -10,11 +10,11 @@ cmake_minimum_required(VERSION 3.4.1)
 # or SHARED, and provides the relative paths to its source code.
 add_library(
       # 设置so文件名称.
-       Hello
+       Oboe
        # 设置这个so文件为共享.
        SHARED
        # Provides a relative path to your source file(s).
-       src/main/jni/Hello.cpp)
+       src/main/jni/OboeSinePlayer.cpp)
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
@@ -32,7 +32,7 @@ find_library( # Sets the name of the path variable.
 # build script, prebuilt third-party libraries, or system libraries.
 target_link_libraries( # Specifies the target library.
             # 制定目标库.
-            Hello
+            Oboe
             # Links the target library to the log library
             # included in the NDK.
             oboe
